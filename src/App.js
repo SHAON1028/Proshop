@@ -1,20 +1,12 @@
-import { Container } from "react-bootstrap";
+
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HomeScreen from "./pages/HomeScreen";
+import router from "./route/routes";
+
 
 function App() {
   return (
-    <div className="">
-      <Header></Header>
-      <main className="py-3">
-        <Container>
-          <HomeScreen />
-        </Container>
-      </main>
-      <Footer></Footer>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 
